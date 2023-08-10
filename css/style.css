@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(56, 18, 114);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+}
+
+#logo{
+    margin: 30px;
+}
+
+
+.a{
+    background: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#Pin{
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    height: 50px;
+    border-radius: 4px 4px solid grey;
+    font-size: 19px;
+}
+
+#startButton{
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    border-radius: 4px 4px solid grey;
+    font-size: 19px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px -4px inset;
+    background: rgb(51, 51, 51);
+    font-weight: bold;
+    color: white;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: white;
+    box-shadow: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.idioma{
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: calc(16px + env(safe-area-inset-left));
+}
+#idioma{    
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    min-height: unset;
+    position: relative;
+    transition: all 100ms ease 0s;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0px 6px 0px 1px;
+    border: none;
+    outline: 0px !important;
+}
+
+
+.circulo {
+    position: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.1;
+    min-width: 75vmin;
+    min-height: 75vmin;
+    bottom: -15vmin;
+    right: -15vmin;
+}
+
+.cuadrado{
+    position: fixed;
+    pointer-events: none;
+    background-color: rgb(0, 0, 0);
+    transform: rotate(45deg);
+    opacity: 0.1;
+    top: -15vmin;
+    left: -15vmin;
+    min-width: 75vmin;
+    min-height: 75vmin;
+}
